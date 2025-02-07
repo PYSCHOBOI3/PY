@@ -385,7 +385,7 @@ def TF_command(message):
         )
 
         # Log the attack started message
-        logging.info(f"Attack started by {user_name}: ./RAGNAROK {target_ip} {target_port} {default_duration} 900")
+        logging.info(f"Attack started by {user_name}: ./PYSCHO {target_ip} {target_port} {duration} 900")
 
         # Run the attack command with the default duration and pass the user-provided duration for the finish message
         asyncio.run(run_attack_command_async(target_ip, int(target_port), default_duration, user_duration, user_name))
